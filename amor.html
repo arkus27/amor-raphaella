@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amor</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        color: pink;
+      }
+
+      body {
+        background: url(Banner.jpg) no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      audio {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .images-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+      }
+
+      .rotating-image {
+        width: 150px;
+        height: 150px;
+        animation: rotate 5s linear infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Estilos adaptativos */
+      @media (max-width: 768px) {
+        .rotating-image {
+          width: 120px;
+          height: 120px;
+        }
+
+        .images-container {
+          gap: 20px;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .rotating-image {
+          width: 200px;
+          height: 200px;
+        }
+
+        .images-container {
+          gap: 60px;
+        }
+      }
+    </style>
+  </head>
+  <script>
+    alert("Olá, esta página é para você 💖");
+    alert("Eu prometo fazer coisas melhores para você meu amor 😼💖");
+  </script>
+  <body>
+    <h1>eu te amo linda</h1>
+    <div class="images-container">
+      <img src="2.jpeg" alt="Imagen 1" class="rotating-image" />
+      <img src="1.jpeg" alt="Imagen 2" class="rotating-image" />
+    </div>
+    <audio controls>
+      <source src="musica.mpeg" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
